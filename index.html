@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Przed Kamerą • Strona startowa</title>
+  <meta name="description" content="Prosta i profesjonalna strona startowa typu link-in-bio z podstronami." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <h1>Przed Kamerą</h1>
+      </div>
+      <a class="cta" href="pages/contact.html">Kontakt</a>
+    </header>
+
+    <section class="hero">
+      <div class="panel">
+        <h2>Wszystko w jednym miejscu</h2>
+        <p>Strona typu linktree — ale bardziej profesjonalna. Każda karta poniżej prowadzi do dedykowanej podstrony lub zewnętrznego linku. <strong>Link jest zawsze podpięty do tekstu</strong>, nie całego kafelka.</p>
+      </div>
+      <div class="panel">
+        <div class="breadcrumbs"><span>Home</span></div>
+        <div class="content prose">
+          <h3>Jak edytować?</h3>
+          <p>Wejdź w <code>index.html</code> i <code>/pages/*.html</code>, zmień tytuły, treści i odnośniki. Kafelki poniżej mają linki w sekcji „Akcje” — tylko na tekście, zgodnie z Twoim życzeniem.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <span class="tag">Podstrona</span>
+        <h3>Hotele — Przegląd</h3>
+        <p>Zestawienie i rekomendacje. Każdy hotel ma własną podstronę.</p>
+        <div class="actions">
+          <a href="pages/sample-subpage-1.html">Przejdź do listy</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Link zewnętrzny</span>
+        <h3>Booking — polecane noclegi</h3>
+        <p>Wybrane oferty noclegowe w jednym miejscu.</p>
+        <div class="actions">
+          <a href="https://www.booking.com/" target="_blank" rel="noopener">Otwórz Booking</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Podstrona</span>
+        <h3>Oferta wideo</h3>
+        <p>Usługi dla hoteli i apartamentów: zdjęcia, filmy, dron.</p>
+        <div class="actions">
+          <a href="pages/links.html">Zobacz ofertę</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Podstrona</span>
+        <h3>Portfolio — Przed Kamerą</h3>
+        <p>Wybrane realizacje. Mini case studies i krótkie opisy.</p>
+        <div class="actions">
+          <a href="pages/about.html">Wejdź</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Kontakt</span>
+        <h3>Zapytaj o termin</h3>
+        <p>Najszybciej przez formularz lub DM.</p>
+        <div class="actions">
+          <a href="pages/contact.html">Formularz kontaktowy</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">PDF / Media</span>
+        <h3>Cennik (PDF)</h3>
+        <p>Przykładowy cennik — podmień plik na własny.</p>
+        <div class="actions">
+          <a href="#" title="Podmień na link do PDF">Pobierz</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Przed Kamerą • Brak zewnętrznego brandingu
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
